@@ -3,39 +3,55 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sounds of Home</title>
+<title>Sounds of Karachi</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>Sounds of Home</h1>
-<p id="intro">A 60 to 90 second soundscape of my hometown, from morning to night.</p>
+<h1>Sounds of Karachi</h1>
+<p id="intro">An 84 second soundscape of my hometown, Karachi, from morning to night.</p>
 
 <h2>Soundscape</h2>
 
-<audio id="player" controls>
+<audio id="player">
 <source src="audio/soundscape.mp3" type="audio/mpeg">
 This browser does not support audio.
 </audio>
 
+<div id="controls">
+<button id="playBtn">Play</button>
+<button id="pauseBtn">Pause</button>
+<button id="stopBtn">Stop</button>
+<button id="volDownBtn">Volume Down</button>
+<button id="volUpBtn">Volume Up</button>
+</div>
+
+<p id="message">The soundscape is not playing.</p>
+
 <h2>Visualscape</h2>
 
 <div id="scene">
-<img id="sceneImg" src="images/morning.jpg" alt="Morning in my hometown">
+<img id="sceneImg" src="images/morning.jpg" alt="Karachi at different times of day">
 <p id="sceneLabel">Morning</p>
+<p id="caption">Crows on the rooftops wake the city up.</p>
 </div>
 
-<video id="clip" controls muted loop>
+<video id="clip" muted loop>
 <source src="video/street.mp4" type="video/mp4">
 This browser does not support video.
 </video>
 
+<h2>Jump to a time of day</h2>
+
 <div id="times">
-<img id="morningPic" src="images/morning.jpg" alt="Morning">
-<img id="afternoonPic" src="images/afternoon.jpg" alt="Afternoon">
-<img id="nightPic" src="images/night.jpg" alt="Night">
+<img class="thumb" src="images/morning.jpg" alt="Morning">
+<img class="thumb" src="images/afternoon.jpg" alt="Afternoon">
+<img class="thumb" src="images/evening.jpg" alt="Evening">
+<img class="thumb" src="images/night.jpg" alt="Night">
 </div>
 
-<p id="credits">Sounds from Freesound.org. Photos and video from Pexels.</p>
+<p id="credits">Sounds from the Moodist sound library (CC0 and Pixabay licence), mixed for this project. Images and video made for this project.</p>
 
+<script src="script.js"></script>
 </body>
 </html>

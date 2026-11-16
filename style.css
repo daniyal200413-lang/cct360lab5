@@ -1,0 +1,57 @@
+body {
+  background-color: #fdf1e4;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+  transition: background-color 2s;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#scene {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#sceneImg {
+  width: 100%;
+  border: 4px solid black;
+  border-radius: 10px;
+  transition: filter 1s;
+}
+
+#sceneLabel {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 10px 0 0 0;
+}
+
+#caption {
+  font-size: 20px;
+}
+
+#clip {
+  width: 400px;
+  max-width: 90%;
+  border: 4px solid black;
+  border-radius: 10px;
+}
+
+.thumb {
+  width: 180px;
+  max-width: 45%;
+  margin: 5px;
+  border: 4px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#credits {
+  font-size: 13px;
+  color: gray;
+}
